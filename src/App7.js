@@ -3,13 +3,14 @@ import Home from "./routes/Home"
 import Details from "./components/Details";
 
 // Router 예제
-// url로 값을 전달해줘야 하는 경우는?
+// npm install react-router-dom@6 설치
+// url을 Router에서 분기해준다. 조건들을 가지는건 Routes에서 관장해준다.
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/details/:id" element={<Details />} />
+        <Route path="/details" element={<Details />} />
       </Routes>
     </Router>
   );
